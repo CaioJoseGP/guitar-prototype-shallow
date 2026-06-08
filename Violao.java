@@ -21,7 +21,7 @@ public class Violao implements Cloneable {
         try {
             return (Violao) super.clone();
         } catch (CloneNotSupportedException e) {
-            return null;
+            throw new RuntimeException("Erro ao clonar o objeto", e);
         }
     }
 }

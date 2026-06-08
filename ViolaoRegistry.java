@@ -7,7 +7,7 @@ public class ViolaoRegistry {
     public ViolaoRegistry() {
         prototipos.put("Classico", new Violao("Clássico", "Nylon", "Acústico", "Suave"));
         prototipos.put("Folk", new Violao("Folk", "Aço", "Acinturado/Grande", "Encorpado"));
-        prototipos.put("Flat", new Violao("Flat", "Nylon", "Fino/Elétrico", "Suave"));
+        prototipos.put("Flet", new Violao("Flet", "Nylon", "Fino/Elétrico", "Suave"));
         prototipos.put("Jumbo", new Violao("Jumbo", "Aço", "Largo/Arredondado", "Grave"));
         prototipos.put("7Cordas", new Violao("7 Cordas", "Nylon (7)", "Clássico", "Grave"));
         prototipos.put("12Cordas", new Violao("12 Cordas", "Aço (12)", "Clássico", "Ressonância Plena"));
@@ -17,7 +17,7 @@ public class ViolaoRegistry {
     }
 
     public Violao getViolao(String chave) {
-        Violao prototipo = prototipos.get(chave);
+        Violao prototipo = prototipos.get(chave.trim());
         return (prototipo != null) ? prototipo.clone() : null;
     }
 }

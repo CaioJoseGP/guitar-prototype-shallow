@@ -6,8 +6,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("=== Bem-vindo à Fábrica de Violões (Shallow Clone) ===");
-        System.out.println("Opções disponíveis: Classico, Folk, Flat, Jumbo, 7Cordas, 12Cordas, Zero, DuploZero, TriploZero");
-        System.out.print("Digite o modelo que deseja produzir: ");
+        System.out.println("Opções disponíveis: Classico, Folk, Flet, Jumbo, 7Cordas, 12Cordas, Zero, DuploZero, TriploZero");
+        System.out.print("Digite o modelo que deseja produzir (digite exatamente como escrito acima): ");
         
         String escolha = scanner.nextLine();
         Violao violaoCliente = fabrica.getViolao(escolha);
